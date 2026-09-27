@@ -188,6 +188,47 @@ html,body{max-width:100%;overflow-x:hidden}
   .teacher-photo-wrap{width:min(100%,250px)}
 }
 
+
+/* mobile-visual-fix-2026-09-27 */
+@media (max-width:760px){
+  .hero-cover{
+    height:auto;
+    min-height:0;
+    overflow:hidden;
+    background:#f7f3ea;
+    border-radius:0 0 14px 14px;
+  }
+  .hero-cover img{
+    width:100%;
+    height:auto;
+    object-fit:contain;
+    object-position:center center;
+  }
+  .hero-card{
+    margin-top:-8px;
+  }
+  .hero h1{
+    font-size:27px;
+    line-height:1.08;
+  }
+  .hero p{
+    font-size:14px;
+    line-height:1.45;
+  }
+  .section-top h2{
+    font-size:24px;
+    line-height:1.08;
+  }
+  .section-top p{
+    font-size:13px;
+  }
+}
+@media (max-width:390px){
+  .hero-cover{height:auto}
+  .hero h1{font-size:25px}
+  .section-top h2{font-size:23px}
+}
+
 </style>
 </head>
 <body id="top">
