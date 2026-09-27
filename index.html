@@ -119,6 +119,75 @@ details[open] .summary-icon:after{transform:translate(-50%,-50%) rotate(0deg)}
 
 .course-badge{display:inline-flex;align-items:center;gap:8px;margin:0 0 16px;padding:9px 13px;border-radius:999px;background:#f6f0df;border:1px solid #e5d7b5;color:#6d5728;font-size:13px;font-weight:800}
 .course-badge::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--gold)}
+
+/* mobile-2026-09-27 */
+html,body{max-width:100%;overflow-x:hidden}
+.hero-copy,.teacher-text,.teacher-details,.details-grid,.info-card,.fact,.footer-box{min-width:0}
+.teacher-text h3,.teacher-role,.tags li,.fact dd,.pub-list li,.footer-box{overflow-wrap:anywhere}
+@media (max-width:760px){
+  body{font-size:15px}
+  .shell{width:calc(100% - 24px)}
+  .hero{padding-bottom:14px}
+  .hero-cover{height:210px;min-height:0;border-radius:0 0 16px 16px}
+  .hero-cover img{object-position:center top}
+  .hero-card{margin-top:-18px;padding:16px;border-radius:20px}
+  .hero-card-inner{display:block}
+  .hero-copy{max-width:none}
+  .eyebrow{max-width:100%;padding:7px 10px;font-size:10px;letter-spacing:.06em;white-space:normal}
+  .hero h1{margin:12px 0 10px;font-size:30px;line-height:1.05;overflow-wrap:anywhere}
+  .hero p{font-size:15px;line-height:1.45}
+  .hero-side{display:grid;grid-template-columns:1fr;gap:10px;width:100%;margin-top:16px}
+  .count-card,.quick-link,.vk-link{width:100%}
+  .count-card{padding:14px 16px;border-radius:16px}
+  .count-card strong{font-size:30px}
+  .quick-link,.vk-link{padding:12px 14px;border-radius:15px}
+  main{padding:12px 0 34px}
+  .section-top{display:block;margin:8px 0 14px}
+  .section-top h2{font-size:28px;line-height:1.08}
+  .section-top p{font-size:14px;line-height:1.4}
+  .searchbar{gap:8px;padding:11px 12px;border-radius:16px}
+  .searchbar input{min-width:0;width:100%;font-size:16px}
+  .clear{padding:8px 10px;font-size:12px;flex:0 0 auto}
+  .list{gap:14px;margin-top:14px}
+  .teacher{border-radius:20px}
+  .teacher-main{display:block;padding:14px}
+  .teacher-photo-wrap{width:min(100%,280px);max-width:280px;margin:0 auto 16px;border-radius:18px}
+  .teacher-photo{width:100%;height:auto;aspect-ratio:1/1.18;object-fit:cover}
+  .teacher-text h3{font-size:25px;line-height:1.08;margin-bottom:7px}
+  .teacher-role{font-size:15px;line-height:1.4;margin-bottom:12px}
+  .course-badge{max-width:100%;white-space:normal;line-height:1.3;padding:8px 11px;margin-bottom:12px;font-size:12px}
+  .teacher-section-title{font-size:11px;line-height:1.35;letter-spacing:.08em;margin-bottom:8px}
+  .tags{display:grid;grid-template-columns:1fr;gap:8px}
+  .tags li{width:100%;padding:10px 11px;border-radius:13px;font-size:13px;line-height:1.4}
+  .teacher-details summary{padding:15px 14px;font-size:15px}
+  .summary-icon{flex:0 0 18px;margin-left:12px}
+  .details-grid,.details-grid.single{display:grid;grid-template-columns:1fr;gap:10px;padding:0 12px 12px}
+  .info-card{padding:14px;border-radius:16px}
+  .info-card h4{font-size:20px;margin-bottom:12px}
+  .info-card h5{font-size:12px;margin:14px 0 8px}
+  .facts{gap:8px}
+  .fact{padding-bottom:8px}
+  .fact dt{font-size:10px;letter-spacing:.07em}
+  .fact dd{font-size:14px}
+  .emails a{max-width:100%;width:100%;padding:8px 10px;font-size:13px;word-break:break-all}
+  .pub-list{padding-left:18px;gap:8px}
+  .pub-list li{font-size:13px;line-height:1.45;word-break:break-word}
+  .footer{padding:18px 0 28px}
+  .footer-box{display:block;padding:16px;border-radius:18px}
+  .footer-box>div:last-child{margin-top:12px}
+  .footer a{white-space:normal}
+}
+@media (max-width:390px){
+  .shell{width:calc(100% - 16px)}
+  .hero-cover{height:185px}
+  .hero-card{padding:14px}
+  .hero h1{font-size:27px}
+  .section-top h2{font-size:25px}
+  .teacher-main{padding:12px}
+  .teacher-text h3{font-size:23px}
+  .teacher-photo-wrap{width:min(100%,250px)}
+}
+
 </style>
 </head>
 <body id="top">
