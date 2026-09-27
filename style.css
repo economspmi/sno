@@ -1,0 +1,107 @@
+:root{
+--green:#144836;
+--green-2:#1d5d49;
+--gold:#be9b52;
+--line:#ddd7ca;
+--text:#20342c;
+--chip:#eef3ec;
+--shadow:0 16px 40px rgba(24,56,43,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;background:linear-gradient(180deg,#fbf8f1, #f4efe6 26%, #f7f3ea 100%);color:var(--text);line-height:1.5}
+a{color:var(--green-2);text-decoration:none}
+img{display:block;max-width:100%}
+.shell{width:min(1180px, calc(100% - 32px));margin:0 auto}
+.hero{position:relative;padding-bottom:26px}
+.hero-cover{height:min(40vw, 520px);min-height:280px;border-radius:0 0 24px 24px;overflow:hidden;box-shadow:var(--shadow);background:#ece7dd}
+.hero-cover img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.hero-card{position:relative;margin:-54px auto 0;background:rgba(255,253,249,.96);backdrop-filter: blur(10px);border:1px solid rgba(219,212,199,.8);border-radius:28px;box-shadow:0 18px 45px rgba(31,59,47,.12);padding:28px}
+.hero-card-inner{display:flex;gap:28px;align-items:flex-start;justify-content:space-between}
+.hero-copy{max-width:760px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;padding:8px 14px;border-radius:999px;background:#f1efe7;color:var(--green);font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.eyebrow-dot{width:8px;height:8px;border-radius:50%;background:var(--gold)}
+.hero h1{margin:16px 0 12px;font-size:clamp(32px,5vw,56px);line-height:.98;font-family:Georgia,"Times New Roman",serif;color:var(--green)}
+.hero p{margin:0;color:#50655d;font-size:18px;max-width:690px}
+.hero-features{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.hero-features span{padding:10px 14px;border-radius:999px;background:#f4f0e6;border:1px solid var(--line);color:var(--green);font-weight:600;font-size:14px}
+.hero-side{display:flex;flex-direction:column;gap:14px;align-items:stretch;min-width:220px}
+.count-card{padding:16px 18px;border-radius:22px;background:linear-gradient(135deg,#194f3d,#124132);color:white;box-shadow:inset 0 0 0 1px rgba(255,255,255,.08)}
+.count-card strong{display:block;font-size:34px;line-height:1;font-family:Georgia,serif}
+.count-card span{display:block;margin-top:6px;color:#d6e7de}
+.quick-link{display:block;text-align:center;padding:14px 16px;border-radius:18px;background:#fbf9f4;border:1px solid var(--line);font-weight:700}
+.vk-link{display:block;text-align:center;padding:14px 16px;border-radius:18px;background:var(--green);border:1px solid var(--green);color:#fff;font-weight:800;transition:transform .2s ease,box-shadow .2s ease,background .2s ease}.vk-link:hover{transform:translateY(-1px);box-shadow:0 8px 18px rgba(20,72,54,.18);background:#1a5743}
+main{padding:24px 0 56px}
+.section-top{display:flex;gap:16px;align-items:end;justify-content:space-between;margin:14px 0 18px}
+.section-top h2{margin:0;font-size:36px;font-family:Georgia,"Times New Roman",serif;color:var(--green)}
+.section-top p{margin:8px 0 0;color:#667870}
+.searchbar{display:flex;align-items:center;gap:12px;background:rgba(255,253,249,.88);border:1px solid var(--line);border-radius:22px;padding:14px 16px;box-shadow:0 10px 24px rgba(31,59,47,.04)}
+.searchbar input{border:0;background:transparent;flex:1;font-size:17px;outline:none;color:var(--text)}
+.searchbar svg{flex:0 0 auto}
+.clear{border:0;background:#f2efe6;color:var(--green);padding:10px 14px;border-radius:14px;font-weight:700;cursor:pointer}
+.list{display:grid;gap:18px;margin-top:18px}
+.teacher{background:rgba(255,253,249,.96);border:1px solid var(--line);border-radius:28px;box-shadow:0 12px 30px rgba(31,59,47,.05);overflow:hidden}
+.teacher-main{display:grid;grid-template-columns:200px 1fr;gap:26px;padding:22px}
+.teacher-photo-wrap{border-radius:22px;overflow:hidden;background:#f0ede5;align-self:start}
+.teacher-photo{width:100%;aspect-ratio:1/1.18;object-fit:cover}
+.teacher-badge{display:inline-block;padding:8px 12px;border-radius:999px;background:#f2efe7;color:#698070;font-size:12px;font-weight:800;letter-spacing:.07em;text-transform:uppercase}
+.teacher-text h3{margin:0 0 8px;font-size:clamp(28px,4vw,44px);line-height:1.04;color:var(--green)}
+.teacher-role{margin:0 0 18px;color:#6c7b74;font-size:21px}
+.teacher-section-title{font-size:13px;letter-spacing:.12em;color:var(--green);text-transform:uppercase;font-weight:800;margin-bottom:10px}
+.tags{display:flex;flex-wrap:wrap;gap:10px;list-style:none;margin:0;padding:0}
+.tags li{padding:11px 14px;border-radius:16px;background:var(--chip);border:1px solid #dbe4d8;color:#365747}
+.muted-pill{background:#f0ede5!important;color:#7f8f86!important}
+.teacher-details{border-top:1px solid var(--line)}
+.teacher-details summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;padding:18px 22px;color:var(--green);font-weight:800}
+.teacher-details summary::-webkit-details-marker{display:none}
+.summary-icon{width:18px;height:18px;position:relative;display:inline-block}
+.summary-icon:before,.summary-icon:after{content:"";position:absolute;left:50%;top:50%;width:18px;height:2px;background:var(--green);transform:translate(-50%,-50%);border-radius:2px}
+.summary-icon:after{transform:translate(-50%,-50%) rotate(90deg);transition:.25s ease}
+details[open] .summary-icon:after{transform:translate(-50%,-50%) rotate(0deg)}
+.details-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:18px;padding:0 22px 22px}
+.info-card{background:#fbfaf5;border:1px solid #e7e0d3;border-radius:22px;padding:18px}
+.info-card h4{margin:0 0 16px;font-size:22px;color:var(--green);font-family:Georgia,"Times New Roman",serif}
+.info-card h5{margin:18px 0 10px;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#6c7b74}
+.facts{display:grid;gap:10px;margin:0}
+.fact{display:grid;gap:4px;padding-bottom:10px;border-bottom:1px dashed #ddd5c7}
+.fact:last-child{border-bottom:0;padding-bottom:0}
+.fact dt{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#7a8a82;font-weight:700}
+.fact dd{margin:0;color:#2d443b}
+.emails{display:flex;flex-direction:column;gap:8px}
+.emails a{display:inline-flex;align-items:center;width:fit-content;padding:9px 12px;border-radius:12px;background:#eef4ef;border:1px solid #dbe6de;word-break:break-all}
+.pub-list{margin:0;padding-left:20px;display:grid;gap:10px}
+.pub-list li{color:#334840}
+.empty-note{margin:0;color:#7b8983}
+.no-results{margin-top:20px;padding:26px;border-radius:22px;background:#fffdf9;border:1px dashed #d9d2c4;color:#61746c;text-align:center}
+.hide{display:none !important}
+.footer{padding:26px 0 48px;color:#667870}
+.footer-box{background:rgba(255,253,249,.85);border:1px solid var(--line);border-radius:24px;padding:22px;display:flex;align-items:start;justify-content:space-between;gap:20px}
+.footer p{margin:8px 0 0;max-width:900px}
+.footer a{white-space:nowrap;font-weight:700}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media (max-width: 900px){
+.hero-card-inner{flex-direction:column}
+.hero-side{min-width:0;width:100%;flex-direction:row;flex-wrap:wrap}
+.count-card{flex:1 1 200px}
+.quick-link{flex:1 1 180px}
+.teacher-main{grid-template-columns:1fr}
+.teacher-photo-wrap{max-width:250px}
+.details-grid{grid-template-columns:1fr}
+}
+@media (max-width: 640px){
+.shell{width:min(100% - 20px, 1180px)}
+.hero-cover{min-height:200px;height:54vw;border-radius:0 0 18px 18px}
+.hero-card{margin-top:-28px;padding:18px;border-radius:22px}
+.hero h1{font-size:34px}
+.hero p{font-size:15px}
+.section-top{flex-direction:column;align-items:flex-start}
+.section-top h2{font-size:30px}
+.teacher-main{padding:16px;gap:18px}
+.teacher-text h3{font-size:24px}
+.teacher-role{font-size:16px}
+.teacher-photo-wrap{max-width:100%}
+.tags li{font-size:14px}
+.teacher-details summary,.details-grid{padding-left:16px;padding-right:16px}
+.footer-box{flex-direction:column}
+}
+.details-grid.single{grid-template-columns:1fr}
